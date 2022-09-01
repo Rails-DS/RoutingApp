@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mine %>
+
+<div>
+  <%= link_to "Edit this mine", edit_mine_path(@mine) %> |
+  <%= link_to "Back to mines", mines_path %>
+
+  <%= button_to "Destroy this mine", @mine, method: :delete %>
+</div>
